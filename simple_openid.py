@@ -32,7 +32,7 @@ class SimpleOpenID(object):
                     
         @openid.after_login
         def after_login(resp):
-            if resp.email and (resp.email.endswith('@{0}'.format(valid_domain)) or valid_domain == ''):
+            if resp.email and (resp.email.endswith('@{0}'.format(valid_domain)) or not valid_domain):
                 session['user'] = {
                     'openid' : resp.identity_url,
                     'email' : resp.email,
