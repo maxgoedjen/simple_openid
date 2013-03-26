@@ -5,11 +5,11 @@ from distutils.core import setup
 
 doclines = __doc__.split("\n")
 
-setup(name="Flask Simple OpenID",
+setup(name="flask_simple_openid",
       version="1.0.0",
       maintainer="Max Goedjen",
       maintainer_email="max.goedjen@gmail.com",
-      url = "http://github.com/maxgoedjen/flask-simple-openid",
+      url = "http://github.com/maxgoedjen/flask_simple_openid",
       platforms = ["any"],
       description = doclines[0],
       readme = 'README.md',
