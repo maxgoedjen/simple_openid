@@ -1,12 +1,12 @@
-# Flask Simple OpenID
-*One line OpenID login*
+# Simple OpenID
+*One line OpenID login for Flask*
 
 
 ## Setup
 
 Import the module:
 
-`from flask_simple_openid import SimpleOpenID`
+`from simple_openid import SimpleOpenID`
 
 Configure it:
 
