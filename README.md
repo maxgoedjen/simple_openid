@@ -4,6 +4,12 @@
 
 ## Setup
 
+Import the module:
+
+`from flask_simple_openid import SimpleOpenID`
+
+Configure it:
+
 `openid = SimpleOpenID(app, 'YOUR_APP_SECRET')`
 
 ### Arguments
