@@ -6,7 +6,7 @@ from distutils.core import setup
 doclines = __doc__.split("\n")
 
 setup(name="simple_openid",
-      version="1.0.4",
+      version="1.0.5",
       maintainer="Max Goedjen",
       maintainer_email="max.goedjen@gmail.com",
       url = "http://github.com/maxgoedjen/simple_openid",
