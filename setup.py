@@ -1,0 +1,18 @@
+"""Flask Simple OpenID. One-line setup for OpenID login.
+"""
+
+from distutils.core import setup
+
+doclines = __doc__.split("\n")
+
+setup(name="Flask Simple OpenID",
+      version="1.0.0",
+      maintainer="Max Goedjen",
+      maintainer_email="max.goedjen@gmail.com",
+      url = "http://github.com/maxgoedjen/flask-simple-openid",
+      platforms = ["any"],
+      description = doclines[0],
+      readme = 'README.md',
+      install_requires = ['flask_openid'],
+      long_description = "\n".join(doclines[2:])
+      )
