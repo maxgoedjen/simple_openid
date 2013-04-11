@@ -54,7 +54,8 @@ class SimpleOpenID(object):
                 return f(*arg, **kw)
             else:
                 def unauthorized(*arg, **kw):
-                    session['unauth_route'] = '/{route}'.format(**kw)
+                    if 'route' in kw:
+                        session['unauth_route'] = '/{route}'.format(**kw)
                     return redirect('/login')
                 return unauthorized(*arg, **kw)
         return wrapper
